@@ -1,0 +1,24 @@
+<script>
+//By Andrey N
+//You can use this code but just give credit
+//If you want to know more about this thing go to /game.js
+//Released on: 2020-02-05 09:05 Eastern Standard Time
+</script>
+<head>
+<title>404 error</title>
+</head>
+<body style="text-align: center;" onmousedown="if(score == 0){gamerunning = 1; document.getElementById('overlay').style.display='none'}" onkeyup="if(score == 0){gamerunning = 1; document.getElementById('overlay').style.display='none'}">
+<h1 id="overlay" style="position: absolute; left: 200; top: 200;">Click to play!</h1>
+<img id='hiddenasset2' src='cactus.png' style='display: none;'></img>
+<img id='hiddenasset' src='person.png' style='display: none;'></img>
+<canvas id="canvas" width="1024px" height="400px"></canvas>
+<h1>404 - not found</h1>
+<p>Avoid the cactuses. Use W, Enter, or SPACE key to jump.</p>
+Score: <score id="gameScore">0</score>
+<script src="game.js"></script>
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var gamerunning = 0;
+</script>
+</body>
